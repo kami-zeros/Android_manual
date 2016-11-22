@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context=".Activity_javabasic" >
+    
+    <include 
+        android:id="@+id/javabase_actionbar"
+        layout="@layout/include_content_actionbar"/>
+
+    <ExpandableListView
+        android:id="@+id/content_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FBC7E1"/>
+
+</LinearLayout>

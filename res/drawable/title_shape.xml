@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:radius="50dp"/>
+    <!-- 绘制背景色 -->
+	<solid android:color="#ffffffff"/>
+	
+	<!-- 借助padding元素指定内边距 -->
+    <padding android:left="35dp" android:right="35dp"
+        android:top="55dp" android:bottom="55dp"/>
+</shape>

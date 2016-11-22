@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+    android:background="@drawable/menu_bg"
+    
+    android:id="@+id/list_frame" >
+    <!-- 上述 xmlns:app自动生成-->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp">
+        <!-- 此处资源在：values-attrs.xml文件里，且其是与CircleImageView一起导入的：
+        	 xmlns:app="http://schemas.android.com/apk/res/com.example.ard_myproject"-->
+        <com.myproject.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list_fram_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_user_head"
+            app:border_color="#FFffffff"
+            android:clickable="true"
+            app:border_width="1dp"/>
+        <TextView 
+            android:id="@+id/list_fram_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:text="未登录"
+            android:clickable="true"
+            android:textColor="@color/cyan"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+    <LinearLayout 
+         android:id="@+id/list_fram1"
+	     android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:layout_marginTop="10dp"
+        android:clickable="true">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/menu_net_update"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:padding="2dp"
+	        android:gravity="center_vertical"
+	        android:text="检查更新"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp"/>
+	</LinearLayout>
+    
+    <LinearLayout 
+         android:id="@+id/list_fram2"
+	     android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true">
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/submit_proposal_normal"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:padding="2dp"
+	        android:gravity="center_vertical"
+	        android:text="学习历程"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp"/>
+	</LinearLayout>
+   
+    <LinearLayout 
+         android:id="@+id/list_fram3"
+	     android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true" >
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/icon_msg_center"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:padding="2dp"
+	        android:gravity="center_vertical"
+	        android:text="消息中心"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp"/>
+	</LinearLayout>
+    
+    <LinearLayout 
+         android:id="@+id/list_fram4"
+	     android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true" >
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/recommand_friend_normal"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:padding="2dp"
+	        android:gravity="center_vertical"
+	        android:text="推荐好友"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp"/>
+	</LinearLayout>
+   
+    <LinearLayout 
+         android:id="@+id/list_fram5"
+	     android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true" >
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/help_information_normal"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:padding="2dp"
+	        android:gravity="center_vertical"
+	        android:text="帮助信息"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp"/>
+	</LinearLayout>
+   
+    <LinearLayout 
+         android:id="@+id/list_fram6"
+	     android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true" >
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="5dp"
+	        android:src="@drawable/icon_feedback"/>
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_margin="2dp"
+	        android:padding="2dp"
+	        android:gravity="center_vertical"
+	        android:text="意见反馈"
+	        android:textColor="@android:color/white"
+	        android:textSize="14sp"/>
+	</LinearLayout>
+	
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="5dp">
+        <ImageView
+            android:id="@+id/list_fram7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon_setting" 
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/list_fram8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="设  置"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" 
+            android:clickable="true"/>
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        
+        <LinearLayout 
+            android:id="@+id/list_fram9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"
+		        android:text="32℃"
+		        android:textColor="@android:color/white"
+		        android:textSize="25sp"
+		        android:clickable="true"/>
+	        <TextView 
+	            android:id="@+id/list_framcity"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:textColor="@color/white"
+	            android:text="北京"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

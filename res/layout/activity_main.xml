@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:orientation="vertical"
+    android:id="@+id/main_backg"
+    android:background="@drawable/game_bg"
+    >
+<!-- android:background="@drawable/main_screen_bg" -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/bannerPagerId"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        />
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/contentPagerId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bannerPagerId"
+        android:layout_above="@+id/rgId"
+        android:layout_centerInParent="true"/>
+    
+    <!-- 下要扫描二维码布局 -->
+    
+    <RadioGroup 
+        android:id="@+id/rgId"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentBottom="true">
+        <RadioButton 
+            android:id="@+id/saoId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:button="@null"
+            android:drawableTop="@drawable/home_navibar_tips_icon_scan"
+            android:text="扫一扫"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:clickable="true"/>
+        <LinearLayout
+            android:id="@+id/linXiahua" 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"/>
+        <RadioButton 
+            android:id="@+id/moreId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:button="@null"
+            android:drawableTop="@drawable/home_navibar_tips_icon_store"
+            android:text="更多"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_alignParentRight="true"/>
+    </RadioGroup>
+    
+</RelativeLayout>

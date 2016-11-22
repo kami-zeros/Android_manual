@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KanYiKan_Activity"
+    android:orientation="vertical" >
+
+    <com.myproject.view.MyTitleView
+        android:id="@+id/kan_kan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <WebView 
+            android:id="@+id/kan_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        
+        <RelativeLayout 
+            android:id="@+id/kan_emptyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <RelativeLayout 
+                android:id="@+id/relativeLayout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/loading_bg">
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    
+                    <ProgressBar 
+                        style="@style/my_progressbar.small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#ffffff"
+                        android:text="加载中..."
+                        android:textSize="12sp"/>
+                    
+                </LinearLayout>
+                
+            </RelativeLayout>
+            
+        </RelativeLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>

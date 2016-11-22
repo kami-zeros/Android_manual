@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DialogItem" 
+    
+    android:id="@+id/dialog_item"
+    android:background="@drawable/bookshelf"
+    android:orientation="vertical">
+	
+    <CheckBox 
+        android:id="@+id/nohint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/audio_background"
+        android:gravity="center"
+        android:text="不在提示"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="允许" 
+        android:textSize="22sp"
+        android:background="@drawable/audio_background"
+        android:clickable="true"/>
+    
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="取消" 
+        android:textSize="22sp"
+        android:background="@drawable/audio_background"
+        android:clickable="true"/>
+
+</LinearLayout>

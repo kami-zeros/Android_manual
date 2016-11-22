@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PingYiPing_Activity" >
+
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="#ffff6633">
+    
+    <TextView 
+        android:id="@+id/actionbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="北京"
+        android:textSize="18sp"
+        android:textColor="#ffffffff"
+        android:layout_margin="5dp"
+        android:drawableRight="@drawable/ic_arrow_down_black"/>
+    
+    <RadioButton 
+        android:id="@+id/actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/actionbar_left"
+        android:layout_toStartOf="@+id/actionbar_right"
+        android:hint="输入客户名、地点"
+        android:textSize="12sp"
+        android:button="@null"
+        android:drawableLeft="@drawable/navibar_search_icon_search"
+        android:background="@drawable/title_shape"/>
+    
+    <ImageView 
+        android:id="@+id/actionbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:src="@drawable/home_navibar_icon_add"/>
+	</RelativeLayout>
+	
+    <!-- 没写 -->
+
+</RelativeLayout>

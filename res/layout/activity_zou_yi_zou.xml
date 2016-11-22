@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZouYiZou_Activity" >
+
+    
+    <com.baidu.mapapi.map.MapView  
+    	android:id="@+id/bmapView"  
+    	android:layout_width="fill_parent"  
+    	android:layout_height="fill_parent"  
+    	android:clickable="true" />
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="#ffe3e3e3">
+	    <EditText 
+	        android:id="@+id/edit_find"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	       android:layout_height="wrap_content"
+	       android:gravity="center_vertical"
+	       android:layout_marginTop="2dp"
+	       android:layout_marginLeft="3dp"
+	       android:paddingLeft="5dp"
+	       android:hint="请输入周边"/>
+	    <FrameLayout 
+	        android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_gravity="center_vertical">
+	        <Button 
+		       android:id="@+id/btn_find_search"
+		       android:layout_width="35dp"
+		       android:layout_height="35dp"
+		       android:padding="5dp"
+		       android:layout_marginRight="5dp"
+		       android:layout_marginLeft="3dp"
+		       android:layout_marginTop="2dp"
+		       android:visibility="invisible"
+		       android:background="@drawable/navibar_search_icon_search"/>
+	        <Button  
+	            android:id="@+id/btn_find_choice"
+		       android:layout_width="40dp"
+		       android:layout_height="40dp"
+		       android:padding="5dp"
+		       android:gravity="center"
+		       android:layout_gravity="center"
+		       android:layout_marginRight="5dp"
+		       android:layout_marginLeft="3dp"
+		       android:layout_marginTop="2dp"
+		       android:text="选择"
+		       android:textSize="14sp"/>
+	    </FrameLayout>
+	    
+	    
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Android manual</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_dialog_item">DialogItem</string>
+    <string name="title_activity_activity_javabase">Activity_javabase</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_rest">RestActivity</string>
+    <string name="title_activity_kan_yi_kan_">KanYiKan_Activity</string>
+    <string name="title_activity_ping_yi_ping_">PingYiPing_Activity</string>
+    <string name="title_activity_action_bar">ActionBarActivity</string>
+    <string name="title_activity_zou_yi_zou_">ZouYiZou_Activity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_regist">RegistActivity</string>
+    <string name="title_activity_mei_nv">MeiNvActivity</string>
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <string name="title_activity_activity_javaadvance">Activity_javaadvance</string>
+    <string name="title_activity_activity_javaweb">Activity_javaweb</string>
+    <string name="title_activity_activity_javadatabase">Activity_javadatabase</string>
+    <string name="title_activity_activity_androidbasic">Activity_androidbasic</string>
+    <string name="title_activity_activity_androidcomponment">Activity_androidcomponment</string>
+    <string name="title_activity_activity_arduserinterface">Activity_arduserinterface</string>
+
+</resources>

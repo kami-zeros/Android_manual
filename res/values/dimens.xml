@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 自己写的 -->
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen><!-- //此处是让主界面留的剩余空间 -->
+</resources>

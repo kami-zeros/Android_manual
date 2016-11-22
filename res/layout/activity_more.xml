@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoreActivity"
+    android:background="#11111111"
+    android:orientation="vertical">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="#C08433">
+
+	    <ImageView
+	        android:id="@+id/imageView_actionbar_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:onClick="doClick"
+	        android:src="@drawable/img06g_03" />
+	
+	    <TextView
+	        android:id="@+id/textView_actionbar_title"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center_horizontal"
+	        android:text="命运决定之时"
+	        android:textSize="22sp" />
+
+	</LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/more_rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick">
+        
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ecu"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="休息一下吧..."
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E6D099"/>
+    
+    <LinearLayout 
+        android:id="@+id/more_study"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick">
+        
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ecx"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="继续学习吧..."
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E6D099"/>
+    
+    <TextView 
+        android:id="@+id/more_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textStyle="italic"
+        android:textColor="#C08433"
+        android:textSize="20sp"
+        android:text="犹豫不定，听天由命......"/>
+    
+  
+    <ImageView  
+        android:id="@+id/result"  
+        android:layout_width="60dp"  
+        android:layout_height="60dp"  
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal" 
+        android:background="@drawable/dice"/>  
+  
+    <Button  
+        android:id="@+id/btn_start"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" 
+        android:background="@drawable/aag" 
+        android:onClick="start"
+        android:text="start"/>  
+    
+     <TextView 
+        android:id="@+id/more_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="#C08433"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+</LinearLayout>

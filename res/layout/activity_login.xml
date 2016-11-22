@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <include
+        android:id="@+id/login_actionbar"
+        layout="@layout/include_rest_actionbar" />
+    
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_actionbar"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/login_account"
+        android:hint="请输入账号..."
+        android:paddingLeft="8dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/login_password"
+        android:hint="请输入密码..."
+        android:paddingLeft="8dp"
+        android:ems="10"
+        android:inputType="textPassword" /> 
+    
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/aag"
+        android:text="登录" />
+    
+    <Button
+        android:id="@+id/quxiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bbg"
+        android:text="取消" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentBottom="true">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="16sp"
+            android:text="还没有账号？"/>
+        
+        <TextView 
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="#FF1493"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:text="立即注册  >>>"/>
+        
+    </LinearLayout>
+</RelativeLayout>

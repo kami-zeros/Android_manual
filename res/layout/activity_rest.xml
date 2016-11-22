@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestActivity" 
+    android:background="#11111111"
+    android:orientation="vertical">
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:background="#BFA000">
+	    <ImageView
+	        android:id="@+id/img_actionbar_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:onClick="doClick"
+	        android:src="@drawable/img06g_03" />
+	    <TextView
+	        android:id="@+id/textView_actionbar_title"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="5dp"
+	        android:gravity="center_horizontal"
+	        android:text="休息一下"
+	        android:textSize="18sp" />
+	</LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/zou_zou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick">
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cmt1"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="走一走"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E6D099"/>
+    
+    <LinearLayout 
+        android:id="@+id/kan_kan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick">
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/todayonhistory"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="看一看"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E6D099"/>
+   
+     <LinearLayout 
+        android:id="@+id/xiao_xiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick">
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dbox_about_me"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="笑一笑"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+     <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E6D099"/>
+     
+    <LinearLayout 
+        android:id="@+id/ping_ping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:onClick="doClick">
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dp_icon_60"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="评一评"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E6D099"/>
+    
+    <LinearLayout 
+        android:id="@+id/jingxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true">
+        
+        <LinearLayout 
+            android:id="@+id/jingxi_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:onClick="doClick"
+        android:visibility="invisible"
+        android:gravity="center_vertical">
+        <com.myproject.view.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ecb"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="点开有惊喜哦..."
+            android:textSize="18sp"/>
+    	</LinearLayout>
+    
+   	 <View 
+   	     android:id="@+id/test1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:visibility="invisible"
+        android:background="#E6D099"/>
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>
